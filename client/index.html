@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Paint by TSA</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</head>
+<body>
+    <h1 class="title">Paint by TSA</h1>
+    <div class="div_control">
+        <div id="brush" for="brush" class="tool current">
+            <img data="brush" src="./_Icons/brush.png" alt="Кисть">
+        </div>
+        <div id="line" for="line" class="tool">
+            <img data="line" src="./_Icons/line.png" alt="Линия">
+        </div>
+        <div id="rect" for="rect" class="tool">
+            <img data="rect" src="./_Icons/rectangle.png" alt="Прямоугольник">
+        </div>
+        <div id="circle" for="circle" class="tool">
+            <img data="circle" src="./_Icons/circle.png" alt="Круг">
+        </div>
+        <div id="eraser" for="eraser" class="tool">
+            <img data="eraser" src="./_Icons/eraser.png" alt="Ластик">
+        </div>
+        <input type="color" id="color">
+        <div class="div_thickness">
+            <label class="thickness" for="small">
+                <input class="thicknessInput" id="small" type="radio" name="thickness" value=5> Small
+            </label>
+            <label class="thickness" for="medium">
+                <input checked class="thicknessInput" id="medium" type="radio" name="thickness" value=15> Medium
+            </label>
+            <label class="thickness" for="large">
+                <input class="thicknessInput" id="large" type="radio" name="thickness" value=30> Large
+            </label>
+        </div>
+    </div>
+    <div class="div_canvas">
+        <canvas id="cDrawing" width="1000px" height="900px"></canvas>
+        <canvas id="cEvent" width="1000px" height="900px"></canvas>
+    </div>
+</body>
+</html>

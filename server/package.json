@@ -1,0 +1,9 @@
+{
+  "name": "TSAPaint",
+  "description": "Paint in the real-time by TSA",
+  "author": "Tsvetkov Sergey",
+  "dependencies": {
+    "express": "4.x",
+    "socket.io": "^2.0.3"
+  }
+}
