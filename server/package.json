@@ -2,8 +2,15 @@
   "name": "TSAPaint",
   "description": "Paint in the real-time by TSA",
   "author": "Tsvetkov Sergey",
+    "scripts": {
+    "test": "mocha *.test.js"
+	},
   "dependencies": {
     "express": "4.x",
     "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
   }
 }

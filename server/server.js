@@ -46,3 +46,13 @@ socketIO.on('connection', function (conn)
         socketIO.emit('cleanEraser', { line: data.line, w: data.w });
     });
 });
+
+
+app.get("/", function (request, response) {
+
+    response.send("time of connection");
+});
+
+app.listen(3000);
+
+module.exports.app = app;
